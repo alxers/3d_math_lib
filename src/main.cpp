@@ -1,9 +1,12 @@
 #include <iostream>
 #include "vector3.h"
-#include "vector3.cpp"
 
 int main() {
 	std::cout << "hello" << std::endl;
-	std::cin.get();
+	Vector3 obj1(1.0, 1.0, 0.0);
+	Vector3 obj2(2.0, 1.0, 1.0);
+//	Vector3 obj3;
+//	obj3 = obj1 + obj2;
+	std::cout << "obj3" << std::endl;
 	return 0;
 }

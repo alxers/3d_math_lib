@@ -1,4 +1,4 @@
-# Install script for directory: /home/alx/projects/my/3d_math_lib
+# Install script for directory: /home/alx/projects/other/3d_math_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alx/projects/my/3d_math_lib/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alx/projects/other/3d_math_lib/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

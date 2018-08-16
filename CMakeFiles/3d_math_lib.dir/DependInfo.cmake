@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alx/projects/my/3d_math_lib/src/main.cpp" "/home/alx/projects/my/3d_math_lib/CMakeFiles/3d_math_lib.dir/src/main.cpp.o"
+  "/home/alx/projects/other/3d_math_lib/src/main.cpp" "/home/alx/projects/other/3d_math_lib/CMakeFiles/3d_math_lib.dir/src/main.cpp.o"
+  "/home/alx/projects/other/3d_math_lib/src/vector3.cpp" "/home/alx/projects/other/3d_math_lib/CMakeFiles/3d_math_lib.dir/src/vector3.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,3 +1,3 @@
-/home/alx/projects/my/3d_math_lib/CMakeFiles/rebuild_cache.dir
-/home/alx/projects/my/3d_math_lib/CMakeFiles/3d_math_lib.dir
-/home/alx/projects/my/3d_math_lib/CMakeFiles/edit_cache.dir
+/home/alx/projects/other/3d_math_lib/CMakeFiles/rebuild_cache.dir
+/home/alx/projects/other/3d_math_lib/CMakeFiles/3d_math_lib.dir
+/home/alx/projects/other/3d_math_lib/CMakeFiles/edit_cache.dir

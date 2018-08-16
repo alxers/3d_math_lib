@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/alx/projects/my/3d_math_lib/src/main.cpp
+/home/alx/projects/other/3d_math_lib/src/main.cpp
 iostream
 -
 vector3.h
-/home/alx/projects/my/3d_math_lib/src/vector3.h
-vector3.cpp
-/home/alx/projects/my/3d_math_lib/src/vector3.cpp
+/home/alx/projects/other/3d_math_lib/src/vector3.h
 
-/home/alx/projects/my/3d_math_lib/src/vector3.cpp
+/home/alx/projects/other/3d_math_lib/src/vector3.cpp
 vector3.h
-/home/alx/projects/my/3d_math_lib/src/vector3.h
+/home/alx/projects/other/3d_math_lib/src/vector3.h
 
-/home/alx/projects/my/3d_math_lib/src/vector3.h
+/home/alx/projects/other/3d_math_lib/src/vector3.h
 

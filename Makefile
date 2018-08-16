@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alx/projects/my/3d_math_lib
+CMAKE_SOURCE_DIR = /home/alx/projects/other/3d_math_lib
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alx/projects/my/3d_math_lib
+CMAKE_BINARY_DIR = /home/alx/projects/other/3d_math_lib
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alx/projects/my/3d_math_lib/CMakeFiles /home/alx/projects/my/3d_math_lib/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alx/projects/other/3d_math_lib/CMakeFiles /home/alx/projects/other/3d_math_lib/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alx/projects/my/3d_math_lib/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alx/projects/other/3d_math_lib/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/3d_math_lib.dir/build.make CMakeFiles/3d_math_lib.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/vector3.o: src/vector3.cpp.o
+
+.PHONY : src/vector3.o
+
+# target to build an object file
+src/vector3.cpp.o:
+	$(MAKE) -f CMakeFiles/3d_math_lib.dir/build.make CMakeFiles/3d_math_lib.dir/src/vector3.cpp.o
+.PHONY : src/vector3.cpp.o
+
+src/vector3.i: src/vector3.cpp.i
+
+.PHONY : src/vector3.i
+
+# target to preprocess a source file
+src/vector3.cpp.i:
+	$(MAKE) -f CMakeFiles/3d_math_lib.dir/build.make CMakeFiles/3d_math_lib.dir/src/vector3.cpp.i
+.PHONY : src/vector3.cpp.i
+
+src/vector3.s: src/vector3.cpp.s
+
+.PHONY : src/vector3.s
+
+# target to generate assembly for a file
+src/vector3.cpp.s:
+	$(MAKE) -f CMakeFiles/3d_math_lib.dir/build.make CMakeFiles/3d_math_lib.dir/src/vector3.cpp.s
+.PHONY : src/vector3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/vector3.o"
+	@echo "... src/vector3.i"
+	@echo "... src/vector3.s"
 .PHONY : help
 
 
