@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Werror -std=c++14 -g   CMakeFiles/3d_math_lib.dir/src/main.cpp.o  -o 3d_math_lib 
