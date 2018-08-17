@@ -4,6 +4,9 @@ CMakeFiles
 .codelite/
 CMakeFiles/*
 CMakeFiles/
-CMakeCahe.txt
+CMakeCache.txt
 Makefile
 cmake_install.cmake
+3d_math_lib
+3d_math_lib.project
+3d_math_lib.workspace
