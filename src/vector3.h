@@ -14,6 +14,8 @@ public:
 		y = e2;
 		z = e3;
 	}
+    
+    Vector3 add(Vector3 vec);
 	
 	Vector3 operator+(const Vector3 &vec);
 };
