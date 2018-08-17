@@ -1,7 +1,9 @@
 .codelite
 CMakeFiles
 .codelite/*
+.codelite/
 CMakeFiles/*
+CMakeFiles/
 CMakeCahe.txt
 Makefile
 cmake_install.cmake
