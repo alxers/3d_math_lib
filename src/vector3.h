@@ -8,16 +8,24 @@ public:
 
 	Vector3();
 //	~Vector3();
-	
+
 	Vector3(float e1, float e2, float e3) {
 		x = e1;
 		y = e2;
 		z = e3;
 	}
+
+	Vector3 operator+(Vector3 &vec);
+    Vector3 operator-(Vector3 &vec);
     
-    Vector3 add(Vector3 vec);
-	
-	Vector3 operator+(const Vector3 &vec);
+    Vector3 operator*(float &t);
+    
+    float dot(Vector3 &vec);
+    Vector3 cross(Vector3 &vec);
+    
+    float length();
+    Vector3 unit();
+
 };
 
 #endif // VECTOR3_H
