@@ -1,23 +1,23 @@
 #include "vector3.h"
 #include <cmath>
 
-Vector3 Vector3::operator+(Vector3 &vec) {
+Vector3 Vector3::operator+(const Vector3 &vec) {
 	return Vector3(this->x + vec.x, this->y + vec.y, this->z + vec.z);
 }
 
-Vector3 Vector3::operator-(Vector3 &vec) {
+Vector3 Vector3::operator-(const Vector3 &vec) {
 	return Vector3(this->x - vec.x, this->y - vec.y, this->z - vec.z);
 }
 
-Vector3 Vector3::operator*(float &t) {
+Vector3 Vector3::operator*(const float &t) {
 	return Vector3(this->x * t, this->y * t, this->z * t);
 }
 
-float Vector3::dot(Vector3 &vec) {
+float Vector3::dot(const Vector3 &vec) {
 	return this->x * vec.x + this->y * vec.y + this->z * vec.z;
 }
 
-Vector3 Vector3::cross(Vector3 &vec) {
+Vector3 Vector3::cross(const Vector3 &vec) {
 	return Vector3((this->y * vec.z - this->z * vec.y), (this->x * vec.z - this->z * vec.x), (this->x * vec.y - this->y * vec.x));
 }
 

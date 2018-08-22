@@ -15,13 +15,13 @@ public:
 		z = e3;
 	}
 
-	Vector3 operator+(Vector3 &vec);
-    Vector3 operator-(Vector3 &vec);
+	Vector3 operator+(const Vector3 &vec);
+    Vector3 operator-(const Vector3 &vec);
     
-    Vector3 operator*(float &t);
+    Vector3 operator*(const float &t);
     
-    float dot(Vector3 &vec);
-    Vector3 cross(Vector3 &vec);
+    float dot(const Vector3 &vec);
+    Vector3 cross(const Vector3 &vec);
     
     float length();
     Vector3 unit();
