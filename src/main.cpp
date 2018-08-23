@@ -8,6 +8,6 @@ int main() {
 //	Vector3 obj2(2.0, 3.0, 0.0);
 //	Vector3 obj3 = obj1 + obj2;
 //	std::cout << obj3.unit().x << std::endl;
-    Matrix obj1(3, 3);
+    Matrix obj1(3, 3, 0.0);
 	return 0;
 }
