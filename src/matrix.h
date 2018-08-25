@@ -2,13 +2,12 @@
 #define MATRIX_H
 
 #include <vector>
-#include <iostream>
 
 class Matrix
 {
 public:
     int rows, cols;
-	double values;
+	double value;
     std::vector<std::vector<double> > mat;
 
     Matrix();
@@ -17,7 +16,7 @@ public:
     Matrix(int r, int c, double v = 0.0) {
         rows = r;
         cols = c;
-		values = v;
+		value = v;
         mat.reserve(rows);
         for(int i = 0; i < rows; i++) {
             mat[i].reserve(cols);
@@ -25,13 +24,12 @@ public:
                 mat[i][j] = v;
             }
         }
-        std::cout << mat[1][1] << std::endl;
     }
-    
+
     static Matrix identity(int rows, int cols);
-	
+
 	Matrix& operator=(const Matrix &mat);
-    
+
     Matrix operator+(const Matrix &mat);
     Matrix operator-(const Matrix &mat);
     Matrix operator*(const Matrix &mat);
@@ -40,6 +38,11 @@ public:
     
     Matrix invert();
     Matrix transpose();
+	
+	double& operator()(const int &i, const int &j);
+	// This is necessary if we wish to have read-only access to the elements of the matrix.
+	// It prevents other const methods from throwing an error when obtaining individual element access.
+	const double& operator()(const int &i, const int &j) const;
 };
 
 #endif // MATRIX_H
