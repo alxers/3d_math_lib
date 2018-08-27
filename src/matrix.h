@@ -28,7 +28,7 @@ public:
 
     static Matrix identity(int rows, int cols);
 
-	Matrix& operator=(const Matrix &mat);
+	Matrix operator=(const Matrix &mat);
 
     Matrix operator+(const Matrix &mat);
     Matrix operator-(const Matrix &mat);
