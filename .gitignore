@@ -10,3 +10,4 @@ cmake_install.cmake
 3d_math_lib
 3d_math_lib.project
 3d_math_lib.workspace
+3d_math_lib.cbp

@@ -33,12 +33,12 @@ public:
     Matrix operator+(const Matrix &mat);
     Matrix operator-(const Matrix &mat);
     Matrix operator*(const Matrix &mat);
-    
+
     Matrix operator*(const float &t);
-    
+
     Matrix invert();
     Matrix transpose();
-	
+
 	double& operator()(const int &i, const int &j);
 	// This is necessary if we wish to have read-only access to the elements of the matrix.
 	// It prevents other const methods from throwing an error when obtaining individual element access.
