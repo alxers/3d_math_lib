@@ -13,8 +13,10 @@ Matrix Matrix::operator=(const Matrix &m) {
         return *this;
     }
 
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
+    mat.reserve(m.rows);
+    for (int i = 0; i < m.rows; i++) {
+        mat[i].reserve(m.cols);
+        for (int j = 0; j < m.cols; j++) {
             mat[i][j] = m(i, j);
         }
     }
@@ -35,13 +37,15 @@ Matrix Matrix::operator+(const Matrix &m) {
 }
 
 Matrix Matrix::operator*(const float &t) {
+    Matrix tmp_m(rows, cols);
+
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            this->mat[i][j] = this->mat[i][j] * t;
+            tmp_m(i, j) = mat[i][j] * t;
         }
     }
 
-    return *this;
+    return tmp_m;
 }
 
 Matrix Matrix::identity(int rows, int cols) {

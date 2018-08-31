@@ -10,7 +10,7 @@ public:
 	double value;
     std::vector<std::vector<double> > mat;
 
-    Matrix();
+    Matrix(){};
 //    ~Matrix();
 
     Matrix(int r, int c, double v = 0.0) {
