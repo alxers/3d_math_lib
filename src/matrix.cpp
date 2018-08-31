@@ -1,4 +1,5 @@
 #include "matrix.h"
+#include <iostream>
 
 double& Matrix::operator()(const int &i, const int &j) {
 	return this->mat[i][j];
@@ -25,39 +26,57 @@ Matrix Matrix::operator=(const Matrix &m) {
 }
 
 Matrix Matrix::operator+(const Matrix &m) {
-	Matrix summed_mat(rows, cols, 0.0);
+	Matrix result_mat(rows, cols, 0.0);
 
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < cols; j++) {
-			summed_mat(i, j) = this->mat[i][j] + m(i, j);
+			result_mat(i, j) = mat[i][j] + m(i, j);
 		}
 	}
 
-	return summed_mat;
+	return result_mat;
 }
 
-Matrix Matrix::operator*(const float &t) {
-    Matrix tmp_m(rows, cols);
+Matrix Matrix::operator*(const Matrix &m) {
+    if (cols != m.rows) {
+        // should throw an error
+    }
 
+    Matrix result_mat;
+    double sum;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            tmp_m(i, j) = mat[i][j] * t;
+            sum += mat[i][j] * m(j, i);
+            std::cout << sum << std::endl;
+            //result_mat(i, j) += mat[i][j] * m(j, i);
         }
     }
 
-    return tmp_m;
+    return result_mat;
+}
+
+Matrix Matrix::operator*(const float &t) {
+    Matrix result_mat(rows, cols);
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result_mat(i, j) = mat[i][j] * t;
+        }
+    }
+
+    return result_mat;
 }
 
 Matrix Matrix::identity(int rows, int cols) {
-    Matrix identity_m(rows, cols);
+    Matrix result_mat(rows, cols);
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             if (i == j) {
-                identity_m(i, j) = 1.0;
+                result_mat(i, j) = 1.0;
             }
         }
     }
 
-    return identity_m;
+    return result_mat;
 }
