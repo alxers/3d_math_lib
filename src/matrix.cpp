@@ -43,12 +43,12 @@ Matrix Matrix::operator*(const Matrix &m) {
     }
 
     Matrix result_mat;
-    double sum;
+
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            sum += mat[i][j] * m(j, i);
-            std::cout << sum << std::endl;
-            //result_mat(i, j) += mat[i][j] * m(j, i);
+            for (int k = 0; k < rows; k++) {
+                //result_mat(i, j) += mat[i][j] * m(j, i);
+            }
         }
     }
 
