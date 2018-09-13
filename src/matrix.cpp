@@ -42,13 +42,18 @@ Matrix Matrix::operator*(const Matrix &m) {
         // should throw an error
     }
 
-    Matrix result_mat;
+    Matrix result_mat(m.cols, rows);
+    int sum;
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
+            sum = 0;
             for (int k = 0; k < rows; k++) {
-                //result_mat(i, j) += mat[i][j] * m(j, i);
+                sum += mat[i][k] * m(k, j);
+                //result_mat(i, j) += mat[i][k] * m(k, j);
             }
+            std::cout << "i, j " << i << j << " sum " << sum << std::endl;
+            result_mat(i, j) = sum;
         }
     }
 
