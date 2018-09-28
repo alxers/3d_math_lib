@@ -1,20 +1,26 @@
 #include <iostream>
 #include "Matrix.h"
 
-template < typename T >
-T& Matrix<T>::operator()(const int &i, const int &j)
+template < typename T, int size >
+T Matrix<T, size>::test(T a)
+{
+    return a;
+}
+
+template < typename T, int size >
+T& Matrix<T, size>::operator()(const int &i, const int &j)
 {
 	return this->mat[i][j];
 }
 
-template < typename T >
-const T& Matrix<T>::operator()(const int &i, const int &j) const
+template < typename T, int size >
+const T& Matrix<T, size>::operator()(const int &i, const int &j) const
 {
 	return this->mat[i][j];
 }
 
-template < typename T >
-Matrix<T> Matrix<T>::operator=(const Matrix<T> &m)
+template < typename T, int size >
+Matrix<T, size> Matrix<T, size>::operator=(const Matrix<T, size> &m)
 {
     if (this == &m) {
         return *this;
@@ -31,10 +37,10 @@ Matrix<T> Matrix<T>::operator=(const Matrix<T> &m)
     return *this;
 }
 
-template < typename T >
-Matrix<T> Matrix<T>::operator+(const Matrix<T> &m)
+template < typename T, int size >
+Matrix<T, size> Matrix<T, size>::operator+(const Matrix<T, size> &m)
 {
-    Matrix result_mat(size, 0.0);
+    Matrix<T, size> result_mat(0.0);
 
     for (int i = 0; i < size; i++)
     {
@@ -47,10 +53,10 @@ Matrix<T> Matrix<T>::operator+(const Matrix<T> &m)
     return result_mat;
 }
 
-template < typename T >
-Matrix<T> Matrix<T>::operator*(const Matrix &m)
+template < typename T, int size >
+Matrix<T, size> Matrix<T, size>::operator*(const Matrix<T, size> &m)
 {
-    Matrix result_mat(size);
+    Matrix<T, size> result_mat();
     T sum;
 
     for (int i = 0; i < size; i++)
@@ -71,10 +77,10 @@ Matrix<T> Matrix<T>::operator*(const Matrix &m)
     return result_mat;
 }
 
-template < typename T >
-Matrix<T> Matrix<T>::operator*(const float &t)
+template < typename T, int size >
+Matrix<T, size> Matrix<T, size>::operator*(const float &t)
 {
-    Matrix result_mat(size);
+    Matrix<T, size> result_mat;
 
     for (int i = 0; i < size; i++)
     {
@@ -87,10 +93,10 @@ Matrix<T> Matrix<T>::operator*(const float &t)
     return result_mat;
 }
 
-template < typename T >
-Matrix<T> Matrix<T>::identity(int size)
+template < typename T, int size >
+Matrix<T, size> Matrix<T, size>::identity()
 {
-    Matrix result_mat(size);
+    Matrix<T, size> result_mat;
 
     for (int i = 0; i < size; i++)
     {

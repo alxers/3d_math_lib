@@ -1,41 +1,36 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-#include <vector>
-
-// Correct way ?
-// template < typename T, int size >
-template < typename T >
+template < typename T, int size >
 class Matrix
 {
 public:
-    int size;
     T value;
-    T mat[][0];
+    T mat[size][size];
     
 
     Matrix(){};
 //    ~Matrix();
 
-    Matrix(int s, T v) {
-        size = s;
+    Matrix(T v) {
         value = v;
 
-        mat[size][size];
         for(int i = 0; i < size; i++) {
             for(int j = 0; j < size; j++) {
                 mat[i][j] = value;
             }
         }
     }
+    
+    T test(T a);
 
-    static Matrix identity(int size);
+    static Matrix identity();
 
-    Matrix operator=(const Matrix &mat);
+    Matrix operator=(const Matrix &m);
 
-    Matrix operator+(const Matrix &mat);
-    Matrix operator-(const Matrix &mat);
-    Matrix operator*(const Matrix &mat);
+    Matrix operator+(const Matrix &m);
+    Matrix operator-(const Matrix &m);
+    Matrix operator*(const Matrix &m);
 
     Matrix operator*(const float &t);
 
