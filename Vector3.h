@@ -4,17 +4,17 @@
 class Vector3
 {
 public:
-	float x, y, z;
+    float x, y, z;
 
-	Vector3();
-//	~Vector3();
+    Vector3();
+    //~Vector3();
 
-	Vector3(float e1, float e2, float e3)
-        {
-		x = e1;
-		y = e2;
-		z = e3;
-	}
+    Vector3(float e1, float e2, float e3)
+    {
+        x = e1;
+	y = e2;
+	z = e3;
+    }
 
     Vector3 operator+(const Vector3 &vec);
     Vector3 operator-(const Vector3 &vec);
@@ -29,4 +29,5 @@ public:
 
 };
 
-#endif // VECTOR3_H
+#endif /* VECTOR3_H */
+

@@ -14,7 +14,6 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Matrix.cpp</itemPath>
       <itemPath>Vector3.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -40,8 +39,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Matrix.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Matrix.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Vector3.cpp" ex="false" tool="1" flavor2="0">
@@ -71,8 +68,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Matrix.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="Matrix.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Vector3.cpp" ex="false" tool="1" flavor2="0">

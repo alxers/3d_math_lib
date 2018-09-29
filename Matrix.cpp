@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Matrix.h"
 
 template < typename T, int size >
@@ -69,7 +68,6 @@ Matrix<T, size> Matrix<T, size>::operator*(const Matrix<T, size> &m)
                 sum += mat[i][k] * m(k, j);
                 //result_mat(i, j) += mat[i][k] * m(k, j);
             }
-            std::cout << "i, j " << i << j << " sum " << sum << std::endl;
             result_mat(i, j) = sum;
         }
     }

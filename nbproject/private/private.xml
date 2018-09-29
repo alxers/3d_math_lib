@@ -7,11 +7,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/alx/projects/other/3d_math_lib_n/Matrix.h</file>
-            <file>file:/home/alx/projects/other/3d_math_lib_n/Vector3.cpp</file>
-            <file>file:/home/alx/projects/other/3d_math_lib_n/Vector3.h</file>
-            <file>file:/home/alx/projects/other/3d_math_lib_n/Matrix.cpp</file>
-            <file>file:/home/alx/projects/other/3d_math_lib_n/main.cpp</file>
+            <file>file:/home/alx/projects/my/3d_math_lib/Vector3.h</file>
+            <file>file:/home/alx/projects/my/3d_math_lib/Matrix.h</file>
+            <file>file:/home/alx/projects/my/3d_math_lib/main.cpp</file>
+            <file>file:/home/alx/projects/my/3d_math_lib/Vector3.cpp</file>
         </group>
     </open-files>
 </project-private>
