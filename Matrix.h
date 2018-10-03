@@ -21,8 +21,6 @@ public:
             }
         }
     }
-    
-    T test(T a);
 
     static Matrix identity();
 

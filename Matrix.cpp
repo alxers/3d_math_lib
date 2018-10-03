@@ -1,12 +1,6 @@
 #include "Matrix.h"
 
 template < typename T, int size >
-T Matrix<T, size>::test(T a)
-{
-    return a;
-}
-
-template < typename T, int size >
 T& Matrix<T, size>::operator()(const int &i, const int &j)
 {
 	return this->mat[i][j];
